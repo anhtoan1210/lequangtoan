@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV</title>
+</head>
+<body>
+<h1> CV</h1>
+
+<h2><p> Thong tin cv</p></h2>
+<ul><h4>
+<li> Họ Tên : Lê Văn A</li>
+<li> Địa chỉ : abc </li>
+<li> SDT: 0123456789</li>
+<li> Email :<a> abc@gmail.com</a> </li>
+<li> Học vấn: 12/12 </li>
+<li> Kĩ Năng: Tiếng hàn</li>
+    <li> Kinh nghiệm: 7 năm làm công nhân</li> </h4></ul>
+</body>
+</html>
