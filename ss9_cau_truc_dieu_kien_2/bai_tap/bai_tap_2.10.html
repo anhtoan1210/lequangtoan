@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sanluong = +prompt('nhap so dien tieu thu')
+    let giadien = +prompt('nhap gia dien')
+    let bac1 = 1678
+    let bac2 = 1734
+    let bac3 = 2014
+    let bac4 = 2536
+    let bac5 = 2843
+    let tiendien = sanluong * giadien
+    if (sanluong < 0) {
+        document.write('moi ban nhap lai')
+    } else if (sanluong < 50) {
+        tiendien = sanluong * bac1
+        document.write('tien dien'+tiendien)
+    } else if (sanluong < 100) {
+        tiendien = sanluong * bac2
+        document.write('tien dien'+tiendien)
+    } else if (sanluong < 200) {
+        tiendien = sanluong * bac3
+        document.write('tien dien'+tiendien)
+    } else if (sanluong < 400) {
+        tiendien = sanluong * bac4
+        document.write('tien dien'+tiendien)
+    } else if (sanluong > 400) {
+        tiendien = sanluong * bac5
+        document.write('tien dien'+tiendien)
+    }
+
+</script>
+</body>
+</html>
