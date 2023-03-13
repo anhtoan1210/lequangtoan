@@ -6,27 +6,32 @@
 </head>
 <body>
 <script>
-    let songuyento = prompt('cac so nguyen to ')
     let count = 0;
     let number = 2;
     while (count < 20) {
         let isprime = true;
         if (number === 2 || number === 3) {
-            document.write('la so nguyen to')
+            document.write('la so nguyen to');
             number++;
             count++;
             continue;
         }
-        for (let i = 2; i <= Math.sqrt(number); i++) {
-            if (number % i === 0) {
-                isprime = false
-                break;
 
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i === 0) {
+                    isprime = false;
+                    break;
+
+                }
             }
+
+
+        if (isprime) {
+            console.log(number + "so nguyen to");
+            count++;
         }
-
+        number++;
     }
-
 
 </script>
 
