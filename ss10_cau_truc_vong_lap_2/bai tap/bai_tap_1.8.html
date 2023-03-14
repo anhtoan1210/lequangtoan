@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="ten" onclick=" choi">chơi</button>
+</body>
+<script>
+    let a = 0;
+
+    function choi() {
+        let b = +prompt('nhap so de doan');
+        let ketqua = Math.round(Math.random() * b);
+        console.log(ketqua);
+
+        for (a = 1; a <= 3; a++) {
+            let id = +prompt(' nhap so de doan')
+            if (id > ketqua) {
+                document.write('dap an nho hon')
+               id = prompt('nhap lai')
+            } else if (id < ketqua) {
+                document.write('dap an lon hon');
+               id = prompt('nhap lai ');
+            } else {
+                document.write('chuc mung');
+            }
+
+
+        }
+    }
+</script>
+</html>
