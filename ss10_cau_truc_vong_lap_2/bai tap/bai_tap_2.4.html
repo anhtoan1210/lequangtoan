@@ -10,8 +10,6 @@
         for (let j = 0; j <= 21; j++) {
             if (j >= i) {
                 document.write("*")
-            } else {
-                document.write(" &nbsp")
             }
         }
 
@@ -21,8 +19,6 @@
         for (let j = 0; j < 1; j++) {
             if (j <= i) {
                 document.write("*")
-            } else {
-                document.write("&nbsp ")
             }
         }
 
@@ -32,21 +28,20 @@
         for (let j = 0; j <= 21; j++) {
             if (j >= i) {
                 document.write("*")
-            } else {
-                document.write(" &nbsp")
             }
         }
 
 
     }
-    for (let i = 21; i < 22; i--) {
-        for (let j = 1; j <= 6; j++) {
-            if (j >= i) {
+    for (let i = 1; i < 7; i++) {
+        for (let j = 1; j <= 1; j++) {
+            if (j <= i) {
                document.write("*")
+                document.write("<br>")
             } else {
-                document.write(" &nbsp")
+                document.write(" &nbsp,&nbsp ")
             }
-            document.write("<br>")
+
         }
     }
 
