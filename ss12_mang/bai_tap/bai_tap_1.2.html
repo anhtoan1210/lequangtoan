@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let soNguyen = [2, 4, 6, 20, 8, 6, 78, 18, 22, 28];
+    let max = soNguyen[0];
+    let index = 0
+    for (let i = 0; i < soNguyen.length; i++) {
+        if (soNguyen[i] > max) {
+            max = soNguyen[i];
+            index = i;
+        }
+    }
+    document.write('so lon nhat' + max + ' vi tri do la' + index);
+</script>
+
 </body>
 </html>
