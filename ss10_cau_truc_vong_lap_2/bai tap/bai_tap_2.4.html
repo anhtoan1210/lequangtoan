@@ -6,43 +6,16 @@
 </head>
 <body>
 <script>
-    for (let i = 0; i < 1; i++) {
-        for (let j = 0; j <= 21; j++) {
-            if (j >= i) {
+    for (let i = 1; i <= 10; i++) {
+        for (let j = 1; j <= 21; j++) {
+            if (i==1||i==10||j==1||j==21) {
                 document.write("*")
+            }else {
+                document.write("&nbsp&nbsp")
             }
         }
-
-
-    }
-    for (let i = 0; i <= 5; i++) {
-        for (let j = 0; j < 1; j++) {
-            if (j <= i) {
-                document.write("*")
-            }
-        }
-
         document.write("<br>")
-    }
-    for (let i = 0; i < 1; i++) {
-        for (let j = 0; j <= 21; j++) {
-            if (j >= i) {
-                document.write("*")
-            }
-        }
 
-
-    }
-    for (let i = 1; i < 7; i++) {
-        for (let j = 1; j <= 1; j++) {
-            if (j <= i) {
-               document.write("*")
-                document.write("<br>")
-            } else {
-                document.write(" &nbsp,&nbsp ")
-            }
-
-        }
     }
 
 
