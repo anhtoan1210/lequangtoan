@@ -6,11 +6,22 @@
 </head>
 <body>
 <script>
-    let ngoiSao =["polaris","aldebaran","denneb","vega","altair","dubhe","regulus"];
-    let chomSao =["ursa minor","tarurus","cygnus","lyra","aquila"," Ursa Major ","leo"];
-    function thamSo(){
+    let ngoiSao = ["polaris", "aldebaran", "denneb", "vega", "altair", "dubhe", "regulus"];
+    let chomSao = ["ursa minor", "tarurus", "cygnus", "lyra", "aquila", " Ursa Major ", "leo"];
 
+    function kiemTra(nhap) {
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (ngoiSao[i] === nhap) {
+                return "chom sao tuong ung" + chomSao[i];
+                break;
+            }
+        }
+        return "khong tim thay chom sao tuong ung";
     }
+
+    let a = prompt("nhap ten ngoi sao");
+    let b = kiemTra(a);
+    alert(b);
 </script>
 
 </body>
