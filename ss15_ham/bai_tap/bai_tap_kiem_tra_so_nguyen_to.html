@@ -8,15 +8,27 @@
 <script>
 
 
-    // function kiemTra1SoNguyenTo()
-        let number = prompt("Mời bạn nhập số cần kiểm tra: ") * 1;
+    let number = prompt("Mời bạn nhập số cần kiểm tra: ") * 1;
 
-
-    for (let i = 2; i < 10000; i++) {
-        if (number % i == 0) {
-            alert(number + 'khong phai a so nguyen to');
+    function kiemTra(so) {
+        let isprime = true;
+        if (so < 2) {
+            isprime = false;
+        } else {
+            for (let i = 2; i < so; i++) {
+                if (so % i == 0) {
+                    isprime = false;
+                }
+            }
+        }
+        if (isprime) {
+            alert(so + "la so nguyen to");
+        } else {
+            alert(so + "khong phai la so nguyen to");
         }
     }
+
+    kiemTra(number);
 </script>
 
 </body>
