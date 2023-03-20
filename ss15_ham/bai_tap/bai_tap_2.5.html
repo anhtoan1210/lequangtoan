@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(a, b, c) {
+        let min = a;
+        if (b < min) {
+            min = b;
+        } else if (c < min) {
+            min = c;
+        }
+        return min;
+    }
+
+    let nhap1 = +prompt("nhap 1 so");
+    let nhap2 = +prompt("nhap 1 so");
+    let nhap3 = +prompt("nhap 1 so");
+    let ketQua = kiemTra(nhap1, nhap2, nhap3);
+    alert(ketQua);
+</script>
+
+</body>
+</html>

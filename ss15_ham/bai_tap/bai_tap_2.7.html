@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTra(a, b) {
+        let c = a;
+        a = b;
+        b = c;
+        return [a, b];
+    }
+
+    let nhap1 = +prompt("nhap so thu nhat");
+    let nhap2 = +prompt("nhap so thu hai");
+    [nhap1, nhap2] = kiemTra(nhap1, nhap2);
+    alert("so thu nhat sau khi dao " + nhap1);
+    alert("so thu hai sau khi dao " + nhap2);
+</script>
+
+</body>
+</html>

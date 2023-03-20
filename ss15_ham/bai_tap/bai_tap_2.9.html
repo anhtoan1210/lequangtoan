@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function truyenVao(arr, a) {
+        let dem = 0;
+        let c = false;
+        for (let i = 0; i < arr.length; i++) {
+            if (a == arr[i]) {
+                dem++;
+                c = true;
+            }
+        }
+        if (c) {
+            return dem;
+        } else {
+            return -1;
+        }
+    }
+
+    let array = [1, 4, 7, 9, 8, 9, 8, 6];
+    let nhap = 9;
+    let d = truyenVao(array, nhap);
+    alert(d);
+</script>
+
+</body>
+</html>
