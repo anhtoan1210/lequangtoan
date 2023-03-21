@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class HinhChuNhat {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        }
+
+        tinhDienTich() {
+            return this.chieuDai * this.chieuRong;
+        }
+
+        tinhChuVi() {
+            return (this.chieuDai + this.chieuRong) * 2;
+        }
+    }
+
+    let hinhChuNhat1 = new HinhChuNhat(400, 200);
+    alert(hinhChuNhat1.tinhDienTich());
+    let hinhChuNhat2 = new HinhChuNhat(300, 600);
+    alert(hinhChuNhat2.tinhChuVi());
+
+</script>
+
+</body>
+</html>
