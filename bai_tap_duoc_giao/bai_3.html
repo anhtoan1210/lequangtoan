@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = prompt("nhập số phần tử có trong mảng");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("nhap so phan tu thu" + i);
+    }
+    alert(arr);
+    let flag = true;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[0] < arr[1]) {
+            if (arr[i] > arr[i + 1]) {
+                flag = false;
+                break;
+            }
+        } else if (arr[0] > arr[1]) {
+            if (arr[i] < arr[i + 1]) {
+                flag = false;
+                break;
+            }
+        }
+    }
+    if (flag) {
+        alert("ok");
+    } else {
+        alert("no");
+    }
+</script>
+</body>
+</html>

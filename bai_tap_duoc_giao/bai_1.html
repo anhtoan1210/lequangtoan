@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let n = prompt("nhập số phần tử có trong mảng");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt(" nhập phần tử thứ: " + i);
+    }
+    alert(arr);
+    let demChan = 0;
+    let demLe = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            demChan++;
+        } else if (arr[i] % 2 !== 0) {
+            demLe++;
+        }
+    }
+    if (demChan == demLe) {
+        alert("ok");
+    } else {
+        alert("no");
+    }
+</script>
+</body>
+</html>
