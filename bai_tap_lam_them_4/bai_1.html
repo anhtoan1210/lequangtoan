@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap mang so nguyen bat ki");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("nhap");
+    }
+    alert(arr);
+    let tong = 0;
+    let trungBinh = 0;
+    let count = 0;
+    for (let j = 0; j < arr.length; j++) {
+        if (arr[j] % 5 == 0 && j % 3 == 0) {
+            count++;
+            tong = tong + arr[j];
+        }
+    }
+    trungBinh = tong / count;
+    alert(trungBinh);
+</script>
+
+</body>
+</html>
